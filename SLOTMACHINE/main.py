@@ -21,6 +21,8 @@ symbol_value = {
     "D" : 2
 }
 
+# function to check winnings
+
 def check_winnings(columns, lines, bet, values):
     winnings = 0
     winning_lines = []
@@ -45,7 +47,7 @@ def get_slot_machine_spin(rows, cols, symbols):
 
     columns = []
     for _ in range(cols):
-        column = [] # picking random value for each row in the column
+        column = []      # picking random value for each row in the column
         current_symbols = all_symbols[:]
         for _ in range(rows):
             value = random.choice(all_symbols)
